@@ -1,0 +1,15 @@
+# Workflow definition, one per yaml file
+# start with name of workflow
+name: First Workflow
+# identify event(s) that will trigger the workflow
+on: workflow_dispatch
+# define jobs to be ran by the workflow
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    # define steps to be executed by the job
+    steps:
+      - name: Printing greeting
+        run: echo "Hello from github"
+      - name: Print goodbye
+        run: echo "Au-vioir"
